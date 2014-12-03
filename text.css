@@ -1,4 +1,6 @@
-body {
+html, body {
+height:100%;
+width:100%;
 padding: 15px 15px 15px 15px;
 background-color: #414280;
 margin: 2% 6% 0 6%;
@@ -335,3 +337,14 @@ padding: 0 0 0 0 ;
 
 #pager a.activeSlide { background: rgba(255,255,255,.6);}
 /*Carousel CSS ends here===============*/
+
+/*Map CSS begins*/
+#map-canvas{
+		height: 85%;
+		width: 65%;
+        margin: 0px;
+        padding: 0px;
+		clear: left;
+		clear:right;
+      }
+/*Map CSS Ends*/
