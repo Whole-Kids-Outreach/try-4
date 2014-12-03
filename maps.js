@@ -1,12 +1,12 @@
 var map;
 var infowindow;
 
-function initialize() {
+window.onload = function initialize() {
 var wholekids = new google.maps.LatLng(37.1945048,-90.9527836,21);
 var hospital = new google.maps.LatLng(37.7892298,-90.4406394,21);
 var hospital2 = new google.maps.LatLng(36.7875175,-90.4256953,21);
 
-var hospitalmarker = "hospital.jpg";
+var hospitalmarker = "pics/cross.jpg";
   var mapOptions = {
     zoom: 9,
     center: wholekids,
@@ -20,7 +20,7 @@ var hospitalmarker = "hospital.jpg";
 	var request = {
 		location: wholekids,
 		radius:1000,
-		types:['hospital']
+		types:['hospital'],
 		};
 		
 	infowindow = new google.maps.InfoWindow();
@@ -67,4 +67,3 @@ function createMarker(place){
 			});
 	}
 
-google.maps.event.addDomListener(window, 'load', initialize);
