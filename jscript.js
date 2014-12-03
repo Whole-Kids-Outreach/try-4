@@ -1,17 +1,18 @@
-
-$(function(){
-	//Menu script starts here
+$(function()
+{	//Accordion script starts here.
+	$( "#content" ).accordion({fillspace: false, collapsible: true, active:false});
+	
 	$('.myMenu > li').bind('mouseover', openSubMenu);
-	$('.myMenu > li').bind('mouseout', closeSubMenu);
+		$('.myMenu > li').bind('mouseout', closeSubMenu);
 		
-	function openSubMenu() {
-		$(this).find('ul').css('visibility', 'visible');	
-	};
+		function openSubMenu() {
+			$(this).find('ul').css('visibility', 'visible');	
+		};
 		
-	function closeSubMenu() {
-		$(this).find('ul').css('visibility', 'hidden');	
-	};
-	//Menu script ends here.
+		function closeSubMenu() {
+			$(this).find('ul').css('visibility', 'hidden');	
+		};
+	// Accordion script ends here.
 	
 	//Image carousel script starts here.
 	$('#play').click(function() { $('#slider').cycle('resume'); return false; });
@@ -29,11 +30,11 @@ $(function(){
 		
 	});
 	//Image carousel script ends here.
-});
-	
-	
-	
+	//test men starts here
 
+
+	//test men  ends
+});
 
 
 (function(d, s, id) {
