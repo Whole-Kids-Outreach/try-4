@@ -1,0 +1,337 @@
+body {
+padding: 15px 15px 15px 15px;
+background-color: #414280;
+margin: 2% 6% 0 6%;
+
+}
+
+#full {
+background-color: #E0E0E0;
+	border: 5px solid;
+    border-radius: 75px;
+	border-color: white;
+padding: 25px 25px 25px 25px;
+}
+
+
+
+p {
+text-align: left;
+width: 53%;
+float: left;
+margin: 30px 15px 15px 8%;
+padding: 10px 10px 10px 10px;
+background-color: white;
+font-family: sans-serif;
+clear:left;
+    border: 2px solid;
+    border-radius: 25px;
+	border-color: white;
+}
+
+/*style for accordion content*/
+#content{
+text-align:center;
+width: 70%;
+float: left;
+margin:10px 10px 10px 2%;
+padding: 10px 10px 10px 10px;
+background-color: #DBDBDB;
+}
+
+#lisa {
+float: left;
+width: 17%;
+margin: 0 15px 15px 8%;
+padding: 0 0 0 0;
+}
+
+ul.temptop {
+float: left;
+width: 16.65%;
+margin: 0 0 0 0;
+padding: 20px 0 20px 0;
+background-color: gray;
+text-align: center;
+color: white;
+}
+
+#cover {
+width: 78%;
+float:left;
+margin: 15px 0 0 0;
+padding: 0 0 0 0;
+}
+
+#donate {
+width: 20%;
+float:right;
+margin: 15px 8% 40px 0;
+}
+
+.fb-like-box {
+list-style-type: none;
+margin: 10px 5% 0 0;
+float: right;
+clear:right;
+height: auto;
+padding: 10px 40px 5px 10px;
+width: 21%;
+background-color: #DBDBDB;
+    border: 2px solid;
+    border-radius: 25px;
+		border-color: white;
+	
+}
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .mobile-hide{ display: none; }
+}
+
+#sharebuttons{
+	clear: both;
+	margin-left: 50%;
+	margin-bottom: 10px;
+}
+
+h1 {
+width: 70%;
+text-align: center;
+margin: 0px 0 50px 0;
+padding: 50px 0 0 0 ;
+font-size: 50px;
+}
+
+nav {
+float: clear;
+float: left;
+margin: 0 0 0 20%;
+}
+
+#words {
+width: 100%;
+text-align: center;
+margin: 0 0 20px 0;
+padding: 0 0 0 0 ;
+}
+/*=======Test menu=========*/
+.myMenu {
+	margin:15px 25px 50px 15px;
+	padding:0;
+	
+}
+
+.myMenu li {
+	list-style:none;
+	float:left;
+	font:12px Arial, Helvetica, sans-serif #111;
+}
+
+.myMenu li a:link, .myMenu li a:visited {
+	display:block;
+	text-decoration:none;
+	background-color:#09F;
+	padding: 0.5em 2em;
+	margin:0;
+	color:#111;
+}
+
+.myMenu li a:hover {
+	background-color:#0CF;	
+}
+
+/*style the sub menu*/
+.myMenu li ul {
+	position:absolute;
+	visibility:hidden;
+	border-top:1px solid #fff;
+	margin:0;
+	padding:0;
+	z-index:1000;
+}
+
+.myMenu li ul li {
+	display:inline;
+	float:none;
+}
+
+.myMenu li ul li a:link, .myMenu li ul li a:visited {
+	background-color:#09F;
+	width:auto;
+}
+
+.myMenu li ul li a:hover {
+	background-color:#0CF;	
+}
+
+#container{
+	width:50%;
+	height: auto;
+	float:left;
+	clear:both;
+}
+
+#container ul{
+	width:100%;
+	list-style:none outside none;
+	position:relative;
+}
+
+#container li:first-child{
+	display:list-item;
+	position:relative;
+}
+
+#container li{
+	position:relative;
+	display:none;
+}
+
+.slide{
+	position:absolute;
+	width: 100%;
+	    border: 2px solid;
+    border-radius: 25px;
+}
+
+/*Carousel CSS Starts here*/
+#carousel {
+	width: 720px; /*set to width of images to display*/
+	height: 480px; /*set to height of images to display*/
+	display: block;
+	position: relative;
+	margin: 15px 0 0 8%;
+	float: left;
+}
+
+#slider {
+	width: 720px;
+	height: 480px;
+	display: block;
+	position: absolute;
+	overflow: hidden;
+}
+
+.info {
+	width: 720px;
+	height: 80px;
+	display: block;
+	position: relative;
+	bottom: 100px;
+	background: rgba(30,30,30,.4);
+	z-index: 99;
+}
+
+.info h2 {
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFF;
+	padding: 15px 0 0 20px;
+}
+
+.info p {
+	font-family: sans-serif;
+	font-size: 15px;
+	font-weight: lighter;
+	color: #FFF;
+	padding: 0 0 0 20px;
+	line-height: 1px;
+}
+
+#play {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 44px;
+	background: rgba(30,30,30,.4);
+	color: #FFF;
+	cursor: pointer;
+	z-index: 999;
+	transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+}
+#play:active {
+    background: rgba(30,30,30,.8);
+}
+#pause {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 88px;
+	background: rgba(30,30,30,.4);
+	color: #FFF;
+	cursor: pointer;
+	z-index: 999;
+	transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+}
+#pause:active {
+    background: rgba(30,30,30,.8);
+}
+#next {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: rgba(30,30,30,.4);
+	color: #FFF;
+	cursor: pointer;
+	z-index: 999;
+}
+#next:active {
+    background: rgba(30,30,30,.8);
+}
+#prev {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 133px;
+	background: rgba(30,30,30,.4);
+	color: #FFF;
+	cursor: pointer;
+	z-index: 999;
+}
+#prev:active {
+    background: rgba(30,30,30,.8);
+}
+#pager {
+	width: 100%;
+	text-align: center;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	z-index: 999;
+}
+
+#pager a {
+	font-size: .0em;
+	color: transparent;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	position: relative;
+	border: 1px solid #FFF;
+	border-radius: 20px;
+	background: transparent;
+	margin: 10px;
+}
+
+#pager a.activeSlide { background: rgba(255,255,255,.6);}
+/*Carousel CSS ends here===============*/
