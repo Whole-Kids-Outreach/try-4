@@ -17,7 +17,11 @@ var hospitalmarker = "pics/cross.jpg";
  var map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
 
-	
+	var request = {
+		location: wholekids,
+		radius:1000,
+		types:['hospital'],
+		};
 		
 	infowindow = new google.maps.InfoWindow();
 	var service = new google.maps.places.PlacesService(map);
@@ -62,4 +66,3 @@ function createMarker(place){
 			infowindow.open(map, this);
 			});
 	}
-
