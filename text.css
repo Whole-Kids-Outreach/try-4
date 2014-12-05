@@ -45,6 +45,15 @@ margin:10px 10px 10px 2%;
 padding: 10px 10px 10px 10px;
 background-color: #DBDBDB;
 }
+*style for accordion content*/
+#content{
+text-align:center;
+width: 60%;
+float: left;
+margin:10px 10px 10px 2%;
+padding: 20px 10px 10px 10px;
+background-color: #FFCC99;
+}
 /*programs buttons*/
 #buttons{
 text-align:center;
@@ -58,6 +67,17 @@ background-color: #DBDBDB;
 border: solid;
 border-color: grey;
 float: left;
+}
+#HomeTitle{
+text-align:center;
+font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+width: 60%;
+float: left;
+margin:10px 10px 10px 2%;
+background-color: #DBDBDB;
 }
 
 #Center{
