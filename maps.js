@@ -2,28 +2,28 @@ var map;
 var infowindow;
 
 window.onload = function initialize() {
-// These variables are all of the locations that markers will be placed on the map
 var wholekids = new google.maps.LatLng(37.1945048,-90.9527836,21);
 var hospital = new google.maps.LatLng(37.7892298,-90.4406394,21);
 var hospital2 = new google.maps.LatLng(36.7875175,-90.4256953,21);
-//This variable sets the custom icon image for all hospitals on the map
+
 var hospitalmarker = "pics/cross.jpg";
-//This sets the starting options for the map which include the zoom of the map, center of the map, and style of the map
   var mapOptions = {
     zoom: 9,
     center: wholekids,
 	mapTypeId: google.maps.MapTypeId.SATELLITE,
   };
   
-  //This creates the map
+  
  var map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
+
+	
 		
 	infowindow = new google.maps.InfoWindow();
 	var service = new google.maps.places.PlacesService(map);
 	service.nearbySearch(request, callback);
 	
-	  //These variables place the markers on the map
+	  
 		var marker = new google.maps.Marker({
 			position:wholekids,
 			map:map,
